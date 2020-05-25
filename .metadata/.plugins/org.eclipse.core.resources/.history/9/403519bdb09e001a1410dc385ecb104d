@@ -8,8 +8,8 @@ public class PrimeiraClasseJava {
 		Aluno aluno1 = new Aluno();
 		Aluno aluno2 = new Aluno("Josy");
 		
-		aluno1.setNome("Raphael");
-			
-		System.out.println("Nome =" + aluno1.getNome());
+		aluno1.nome = "Raphael";
+		
+		System.out.println("Nome =" + aluno1.nome);
 	}
 }
