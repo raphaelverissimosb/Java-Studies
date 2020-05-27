@@ -3,10 +3,11 @@ package executavel;
 import javax.swing.JOptionPane;
 
 import cursojava.classes.Aluno;
+import jdk.nashorn.internal.scripts.JO;
 
 public class PrimeiraClasseJava {
 	public static void main(String[] args) {
-		/*
+		
 		String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
 		String idade = JOptionPane.showInputDialog("Qual e a idade do aluno?");
 		String dataNascimento = JOptionPane.showInputDialog("Qual e a data de nascimento?");
@@ -41,16 +42,6 @@ public class PrimeiraClasseJava {
 		aluno1.setNota3(Double.parseDouble(nota3));
 		aluno1.setNota4(Double.parseDouble(nota4));
 		
-		System.out.println("Media = " + aluno1.getMediaNota());
-		System.out.println("Situacao do aluno :" + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		*/
-		
-		/*
-		Aluno aluno2 = new Aluno();
-		System.out.println(aluno2.toString()); // 
-		System.out.println("Media = " + aluno2.getMediaNota());
-		System.out.println("Situacao do aluno :" + (aluno2.getAlunoAprovado() ? "Aprovado" : "Reprovado"));		
-		*/
 		
 		
 		

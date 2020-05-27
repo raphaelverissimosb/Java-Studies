@@ -7,7 +7,7 @@ public class Aluno {
 	private String dataNascimento;
 	private String registroGeral;
 	private String numeroCpf;
-	private String nomeMae;
+	private String nomaMae;
 	private String nomePai;
 	private String dataMatricula;
 	private String nomeEscola;
@@ -65,10 +65,10 @@ public class Aluno {
 		this.numeroCpf = numeroCpf;
 	}
 	public String getNomaMae() {
-		return nomeMae;
+		return nomaMae;
 	}
 	public void setNomaMae(String nomaMae) {
-		this.nomeMae = nomaMae;
+		this.nomaMae = nomaMae;
 	}
 	public String getNomePai() {
 		return nomePai;
@@ -133,19 +133,6 @@ public class Aluno {
 			return false;
 		}
 	}
-	
-	// to String method 
-	
-	@Override
-	public String toString() {
-		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
-				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
-				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nota4=" + nota4
-				+ "]";
-	}
-	
-	
 	
 	
 	
