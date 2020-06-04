@@ -115,12 +115,8 @@ public class Aluno {
 	
 	
 	public double getMediaNota() {
-		
-		double somaNotas = 0.0;
-		for (Disciplina disciplina : disciplinas) {
-			somaNotas += disciplina.getNota();
-		}
-		return somaNotas / disciplinas.size();
+
+		return 0;
 	}
 	
 	public boolean getAlunoAprovado(){

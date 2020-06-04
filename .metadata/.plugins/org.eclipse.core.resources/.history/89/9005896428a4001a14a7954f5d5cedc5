@@ -1,0 +1,12 @@
+package cursojava.classes;
+
+public class Disciplina {
+
+	
+	
+	private double nota1;
+	private String disciplina1;
+	
+	
+	
+}

@@ -115,12 +115,7 @@ public class Aluno {
 	
 	
 	public double getMediaNota() {
-		
-		double somaNotas = 0.0;
-		for (Disciplina disciplina : disciplinas) {
-			somaNotas += disciplina.getNota();
-		}
-		return somaNotas / disciplinas.size();
+		return (disciplina.getNota1()+disciplina.getNota2()+disciplina.getNota3()+ disciplina.getNota4()) / 4;
 	}
 	
 	public boolean getAlunoAprovado(){
@@ -139,7 +134,7 @@ public class Aluno {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
 				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado + ", disciplina=" +"]";
+				+ serieMatriculado + ", disciplina=" + disciplina + "]";
 	}
 	
 	

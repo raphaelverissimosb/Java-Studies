@@ -46,20 +46,13 @@ public class PrimeiraClasseJava {
 		
 		Disciplina disciplina2 = new Disciplina();
 		
+
 		String disciplina02 = JOptionPane.showInputDialog("Informe o nome da disciplina 2?");
 		String nota02 = JOptionPane.showInputDialog("Qual e a nota 2?");
 		disciplina2.setDisciplina(disciplina02);
 		disciplina2.setNota(Double.valueOf(nota02));
-		aluno1.getDisciplinas().add(disciplina2);
 		
 		
-		Disciplina disciplina3 = new Disciplina();
-		
-		String disciplina03 = JOptionPane.showInputDialog("Informe o nome da disciplina 2?");
-		String nota03 = JOptionPane.showInputDialog("Qual e a nota 2?");
-		disciplina3.setDisciplina(disciplina03);
-		disciplina3.setNota(Double.valueOf(nota03));
-		aluno1.getDisciplinas().add(disciplina3);
 		
 		
 		
