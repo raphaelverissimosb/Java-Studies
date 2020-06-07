@@ -3,6 +3,7 @@ package executavel;
 import javax.swing.JOptionPane;
 
 import cursojava.classes.Aluno;
+import cursojava.classes.Disciplina;
 
 public class PrimeiraClasseJava {
 	public static void main(String[] args) {
@@ -17,10 +18,6 @@ public class PrimeiraClasseJava {
 		String dataMatricula = JOptionPane.showInputDialog("Qual seria a data da matricula?");
 		String serieMatriculado = JOptionPane.showInputDialog("Qual e a serie do aluno?"); 
 		String nomeEscola = JOptionPane.showInputDialog("Qual e o nome da escola ?");
-		String nota1 = JOptionPane.showInputDialog("Qual e a nota 1?");
-		String nota2 = JOptionPane.showInputDialog("Qual e a nota 2?");
-		String nota3 = JOptionPane.showInputDialog("Qual e a nota 3?");
-		String nota4 = JOptionPane.showInputDialog("Qual e a nota 4?");
 		
 		
 		
@@ -31,20 +28,26 @@ public class PrimeiraClasseJava {
 		aluno1.setDataNascimento(dataNascimento);
 		aluno1.setRegistroGeral(registroGeral);
 		aluno1.setNumeroCpf(numeroCpf);
-		aluno1.setNomaMae(nomeMae);
+		aluno1.setNomeMae(nomeMae);
 		aluno1.setNomePai(nomePai);
 		aluno1.setDataMatricula(dataMatricula);
 		aluno1.setSerieMatriculado(serieMatriculado);
 		aluno1.setNomeEscola(nomeEscola);
-		aluno1.setNota1(Double.parseDouble(nota1));
-		aluno1.setNota2(Double.parseDouble(nota2));
-		aluno1.setNota3(Double.parseDouble(nota3));
-		aluno1.setNota4(Double.parseDouble(nota4));
 		
+		
+		for(int pos = 1 ; pos <=4; pos++) {
+			String nomeDisciplina = JOptionPane.showInputDialog("Nome da disciplina"+pos+"?");
+			String notaDisciplina = JOptionPane.showInputDialog("Qual e a nota"+pos+"?");
+			Disciplina disciplina = new Disciplina();
+			disciplina.setDisciplina(nomeDisciplina);
+			disciplina.setNota(Double.parseDouble(notaDisciplina));
+		}
+		
+		
+		
+		/*
 		System.out.println("Media = " + aluno1.getMediaNota());
 		System.out.println("Situacao do aluno :" + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		
-	
-		
+		*/
 	}
 }

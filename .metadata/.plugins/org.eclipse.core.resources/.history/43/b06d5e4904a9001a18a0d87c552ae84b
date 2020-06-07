@@ -3,6 +3,7 @@ package executavel;
 import javax.swing.JOptionPane;
 
 import cursojava.classes.Aluno;
+import cursojava.classes.Disciplina;
 
 public class PrimeiraClasseJava {
 	public static void main(String[] args) {
@@ -17,14 +18,6 @@ public class PrimeiraClasseJava {
 		String dataMatricula = JOptionPane.showInputDialog("Qual seria a data da matricula?");
 		String serieMatriculado = JOptionPane.showInputDialog("Qual e a serie do aluno?"); 
 		String nomeEscola = JOptionPane.showInputDialog("Qual e o nome da escola ?");
-		String disciplina1 = JOptionPane.showInputDialog("Informe o nome da disciplina 1?");
-		String nota1 = JOptionPane.showInputDialog("Qual e a nota 1?");
-		String disciplina2 = JOptionPane.showInputDialog("Informe o nome da disciplina 2?");
-		String nota2 = JOptionPane.showInputDialog("Qual e a nota 2?");
-		String disciplina3 = JOptionPane.showInputDialog("Informe o nome da disciplina 3?");
-		String nota3 = JOptionPane.showInputDialog("Qual e a nota 3?");
-		String disciplina4 = JOptionPane.showInputDialog("Informe o nome da disciplina 4?");
-		String nota4 = JOptionPane.showInputDialog("Qual e a nota 4?");
 		
 		
 		
@@ -35,25 +28,47 @@ public class PrimeiraClasseJava {
 		aluno1.setDataNascimento(dataNascimento);
 		aluno1.setRegistroGeral(registroGeral);
 		aluno1.setNumeroCpf(numeroCpf);
-		aluno1.setNomaMae(nomeMae);
+		aluno1.setNomeMae(nomeMae);
 		aluno1.setNomePai(nomePai);
 		aluno1.setDataMatricula(dataMatricula);
 		aluno1.setSerieMatriculado(serieMatriculado);
 		aluno1.setNomeEscola(nomeEscola);
 		
-		aluno1.getDisciplina().setNota1(Double.parseDouble(nota1));
-		aluno1.getDisciplina().setNota2(Double.parseDouble(nota2));
-		aluno1.getDisciplina().setNota3(Double.parseDouble(nota3));
-		aluno1.getDisciplina().setNota4(Double.parseDouble(nota4));
+
+		Disciplina disciplina1 = new Disciplina();
+
+		String disciplina01 = JOptionPane.showInputDialog("Informe o nome da disciplina 1?");
+		String nota01 = JOptionPane.showInputDialog("Qual e a nota 1?");
+		disciplina1.setDisciplina(disciplina01);
+		disciplina1.setNota(Double.valueOf(nota01));
+		aluno1.getDisciplinas().add(disciplina1);
 		
-		aluno1.getDisciplina().setDisciplina1(disciplina1);
-		aluno1.getDisciplina().setDisciplina2(disciplina2);
-		aluno1.getDisciplina().setDisciplina3(disciplina3);
-		aluno1.getDisciplina().setDisciplina4(disciplina4);
+		
+		Disciplina disciplina2 = new Disciplina();
+		
+		String disciplina02 = JOptionPane.showInputDialog("Informe o nome da disciplina 2?");
+		String nota02 = JOptionPane.showInputDialog("Qual e a nota 2?");
+		disciplina2.setDisciplina(disciplina02);
+		disciplina2.setNota(Double.valueOf(nota02));
+		aluno1.getDisciplinas().add(disciplina2);
 		
 		
+		Disciplina disciplina3 = new Disciplina();
+		
+		String disciplina03 = JOptionPane.showInputDialog("Informe o nome da disciplina 2?");
+		String nota03 = JOptionPane.showInputDialog("Qual e a nota 2?");
+		disciplina3.setDisciplina(disciplina03);
+		disciplina3.setNota(Double.valueOf(nota03));
+		aluno1.getDisciplinas().add(disciplina3);
+		
+		
+		
+		
+		
+		
+		/*
 		System.out.println("Media = " + aluno1.getMediaNota());
 		System.out.println("Situacao do aluno :" + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		
+		*/
 	}
 }

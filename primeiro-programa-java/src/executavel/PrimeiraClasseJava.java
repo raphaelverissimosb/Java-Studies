@@ -34,35 +34,18 @@ public class PrimeiraClasseJava {
 		aluno1.setSerieMatriculado(serieMatriculado);
 		aluno1.setNomeEscola(nomeEscola);
 		
-
-		Disciplina disciplina1 = new Disciplina();
-
-		String disciplina01 = JOptionPane.showInputDialog("Informe o nome da disciplina 1?");
-		String nota01 = JOptionPane.showInputDialog("Qual e a nota 1?");
-		disciplina1.setDisciplina(disciplina01);
-		disciplina1.setNota(Double.valueOf(nota01));
-		aluno1.getDisciplinas().add(disciplina1);
 		
-		
-		Disciplina disciplina2 = new Disciplina();
-		
-		String disciplina02 = JOptionPane.showInputDialog("Informe o nome da disciplina 2?");
-		String nota02 = JOptionPane.showInputDialog("Qual e a nota 2?");
-		disciplina2.setDisciplina(disciplina02);
-		disciplina2.setNota(Double.valueOf(nota02));
-		aluno1.getDisciplinas().add(disciplina2);
-		
-		
-		Disciplina disciplina3 = new Disciplina();
-		
-		String disciplina03 = JOptionPane.showInputDialog("Informe o nome da disciplina 2?");
-		String nota03 = JOptionPane.showInputDialog("Qual e a nota 2?");
-		disciplina3.setDisciplina(disciplina03);
-		disciplina3.setNota(Double.valueOf(nota03));
-		aluno1.getDisciplinas().add(disciplina3);
-		
-		
-		
+		for(int pos = 1 ; pos <=4; pos++) {
+			
+			String nomeDisciplina = JOptionPane.showInputDialog("Nome da disciplina"+pos+"?");
+			String notaDisciplina = JOptionPane.showInputDialog("Qual e a nota"+pos+"?");
+			
+			Disciplina disciplina = new Disciplina();
+			disciplina.setDisciplina(nomeDisciplina);
+			disciplina.setNota(Double.valueOf(notaDisciplina));
+			
+			aluno1.getDisciplinas().add(disciplina);
+		}
 		
 		
 		
