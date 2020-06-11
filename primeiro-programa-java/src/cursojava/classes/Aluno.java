@@ -132,6 +132,18 @@ public class Aluno {
 		}
 	}
 	
+	public String getAlunoAporvado2() {
+		double media = getMediaNota();
+		if(media >= 5) {
+			if(media >= 7) {
+				return "Aluno aprovado!";
+			}else {
+				return "Aluno em Recuperacao!";
+			}
+		}else {
+			return "Aluno esta reprovado!";
+		}
+	}
 
 	// to String method 
 	@Override
