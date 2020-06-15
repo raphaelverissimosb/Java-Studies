@@ -1,5 +1,8 @@
 package executavel;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.swing.JOptionPane;
 
 import cursojava.classes.Aluno;
@@ -7,6 +10,11 @@ import cursojava.classes.Disciplina;
 
 public class PrimeiraClasseJava {
 	public static void main(String[] args) {
+		
+		List<Aluno> alunos = new ArrayList<>();
+		
+		for(int qtd = 1 ; qtd <= 2; qtd++) {
+			
 		
 		String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
 		String idade = JOptionPane.showInputDialog("Qual e a idade do aluno?");
@@ -64,9 +72,16 @@ public class PrimeiraClasseJava {
 		}
 		
 		
-		/*
-		System.out.println("Media = " + aluno1.getMediaNota());
-		System.out.println("Situacao do aluno :" + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		*/
+		alunos.add(aluno1);
+	}
+		for (Aluno aluno : alunos) {
+			System.out.println("Media = " + aluno.getMediaNota());
+			System.out.println("Situacao do aluno :" + (aluno.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+			System.out.println("---------------------------------------------------------------------------");
+
+		}
+		
+		
+			
 	}
 }
