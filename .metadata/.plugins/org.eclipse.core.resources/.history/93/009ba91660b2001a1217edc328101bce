@@ -74,67 +74,13 @@ public class PrimeiraClasseJava {
 		
 		alunos.add(aluno1);
 	}
-		
-	//Percorrer listas por posicoes
-		for(int pos =0 ; pos < alunos.size(); pos ++ ) {
-			
-			Aluno aluno = alunos.get(pos);
-			
-			if(aluno.getNome().equalsIgnoreCase("Raphael")) {
-				
-				Aluno trocar =  new Aluno();
-				trocar.setNome("Aluno foi trocado");
-				
-				Disciplina disciplina  = new Disciplina();
-				disciplina.setDisciplina("Matematica");
-				disciplina.setNota(80);
-				
-				trocar.getDisciplinas().add(disciplina);
-				
-				alunos.set(pos, trocar);
-				aluno = alunos.get(pos);
-			}
-			
-			System.out.println("Aluno  = " + aluno.getNome());
-			System.out.println("Nota = " + aluno.getMediaNota());
-			System.out.println("Situacao do aluno = " + aluno.getAlunoAporvado2());
-			System.out.println("Resultado = " + aluno.getAlunoAprovado());
-	
-			for ( Disciplina disciplina : aluno.getDisciplinas()) {
-				 System.out.println("Materia = " + disciplina.getDisciplina() + ", nota ="+ disciplina.getNota());
-			 }
-			
-			for( int posd = 0 ; posd < aluno.getDisciplinas().size(); posd ++) {
-				Disciplina disc = aluno.getDisciplinas().get(posd);
-				System.out.println("Materia = " + disc.getDisciplina()+", nota =" + disc.getNota());
-			}
+		for (Aluno aluno : alunos) {
+			System.out.println("Media = " + aluno.getMediaNota());
+			System.out.println("Situacao do aluno :" + (aluno.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+			System.out.println("---------------------------------------------------------------------------");
+
 		}
 		
-		
-//		for (Aluno aluno : alunos) {
-//			if(aluno.getNome().equalsIgnoreCase("Raphael")) {
-//			alunos.remove(aluno);
-//			break;
-//			}else {
-//				System.out.println("Nome = " + aluno.getNome());
-//				System.out.println("Media = " + aluno.getMediaNota());
-//				System.out.println("Situacao do aluno :" + (aluno.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-//				System.out.println("---------------------------------------------------------------------------");
-//			}
-//		}
-//		
-//		// alunos que sobraram na lista 
-//		System.out.println("*************************************************0");
-//		System.out.println("Älunos  que sobraram na lista");
-//		for(Aluno aluno : alunos) {
-//			
-//			System.out.println("Nome do aluno:"+ aluno.getNome());
-//			
-//			for(Disciplina disciplina : aluno.getDisciplinas()) {
-//				System.out.println(disciplina.getDisciplina());
-//				System.out.println(disciplina.getNota());
-//			}
-//		}
 		
 			
 	}
