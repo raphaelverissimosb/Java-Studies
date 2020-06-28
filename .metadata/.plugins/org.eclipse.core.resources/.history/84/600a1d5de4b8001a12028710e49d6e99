@@ -36,6 +36,9 @@ public class Aluno {
 	}
 	
 	//Getters and Setters
+	
+	
+	
 	public List<Disciplina> getDisciplinas() {
 		return disciplinas;
 	}
