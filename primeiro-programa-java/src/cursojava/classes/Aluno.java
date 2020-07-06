@@ -5,15 +5,9 @@ import java.util.List;
 
 import cursojava.constantes.StatusAluno;
 
-public class Aluno {
+public class Aluno extends Pessoa {
 	
-	private String nome;
-	private int idade;
-	private String dataNascimento;
-	private String registroGeral;
-	private String numeroCpf;
-	private String nomeMae;
-	private String nomePai;
+
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
@@ -27,14 +21,11 @@ public class Aluno {
 	public Aluno() {
 		
 	}
-	public Aluno(String nomePadrao) {
-		this.nome = nomePadrao;
-	}
-	public Aluno(String nomePadrao, int idadePadrao) {
-		this.nome = nomePadrao;
-		this.idade = idadePadrao;
+	public Aluno(String nome) {
+		super.nome = nome;
 	}
 	
+
 	//Getters and Setters
 	public List<Disciplina> getDisciplinas() {
 		return disciplinas;
@@ -43,52 +34,6 @@ public class Aluno {
 		this.disciplinas = disciplinas;
 	}
 
-	
-	
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-	public int getIdade() {
-		return idade;
-	}
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-	public String getDataNascimento() {
-		return dataNascimento;
-	}
-	public void setDataNascimento(String dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
-	public String getRegistroGeral() {
-		return registroGeral;
-	}
-	public void setRegistroGeral(String registroGeral) {
-		this.registroGeral = registroGeral;
-	}
-	public String getNumeroCpf() {
-		return numeroCpf;
-	}
-	public void setNumeroCpf(String numeroCpf) {
-		this.numeroCpf = numeroCpf;
-	}
-	public String getNomeMae() {
-		return nomeMae;
-	}
-	public void setNomeMae(String nomaMae) {
-		this.nomeMae = nomaMae;
-	}
-	public String getNomePai() {
-		return nomePai;
-	}
-	public void setNomePai(String nomePai) {
-		this.nomePai = nomePai;
-	}
 	public String getDataMatricula() {
 		return dataMatricula;
 	}
@@ -143,17 +88,12 @@ public class Aluno {
 	}
 
 	// to String method 
+	
 	@Override
 	public String toString() {
-		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", registroGeral="
-				+ registroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
-				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado + ", disciplina=" +"]";
+		return "Aluno [dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
+				+ serieMatriculado + ", disciplinas=" + disciplinas + "]";
 	}
-	
-	
-
-
 	
 	
 	
