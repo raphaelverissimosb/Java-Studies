@@ -86,7 +86,18 @@ public class Aluno extends Pessoa {
 			return StatusAluno.REPROVADO;
 		}
 	}
-
+	
+	@Override
+	public double salario() {
+		return 1500.90;
+	}
+	
+	
+	@Override
+	public boolean pessoaMaiorIdade() {
+		return idade >= 21;
+	}
+	
 	// to String method 
 	
 	@Override
@@ -94,12 +105,11 @@ public class Aluno extends Pessoa {
 		return "Aluno [dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
 				+ serieMatriculado + ", disciplinas=" + disciplinas + "]";
 	}
+
 	
-	
-	
-	
-	
-	
+	public String msgMaiorIdade() {
+		return this.pessoaMaiorIdade() ? "Oba pessoa e maior de idade!" : "Pessoa nao e maior de idade!";
+	}
 	
 	
 }

@@ -26,6 +26,15 @@ public class Diretor  extends Pessoa{
 		this.titulacao = titulacao;
 	}
 	
+	@Override
+	public double salario() {
+		return 3900.78;
+	}
+	
+	@Override
+	public boolean pessoaMaiorIdade() {
+		return super.pessoaMaiorIdade();
+	}
 	
 	@Override
 	public String toString() {

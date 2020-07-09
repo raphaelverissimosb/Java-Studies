@@ -1,9 +1,14 @@
 package cursojava.classes;
 
-public class Secretario extends Pessoa{
+import cursojava.interfaces.PermitirAcesso;
+
+public class Secretario extends Pessoa implements PermitirAcesso{
 	private String registro;
 	private String nivelCargo;
 	private String experiencia;
+	
+	private String usuario;
+	private String senha;
 	
 	
 	public String getRegistro() {
@@ -25,9 +30,44 @@ public class Secretario extends Pessoa{
 		this.experiencia = experiencia;
 	}
 	
+	public String getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	
+	
+	@Override
+	public double salario() {
+		return 1800.80 + ( 1800.80 * 0.9);
+	}
+	
+	
+	@Override
+	public boolean pessoaMaiorIdade() {
+		return super.pessoaMaiorIdade();
+	}
+	
+	
+	//ToString 
 	@Override
 	public String toString() {
 		return "Secretario [registro=" + registro + ", nivelCargo=" + nivelCargo + ", experiencia=" + experiencia + "]";
+	}
+	
+	
+	//Interfaces
+	@Override
+	public boolean autenticar() {
+		return usuario.equals("admin ") && senha.equals("admin");
+		
 	}
 	
 	

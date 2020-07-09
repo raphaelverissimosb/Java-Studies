@@ -14,4 +14,7 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="cursojava.classes.Pessoa"/>
     <fullyQualifiedTypeName name="cursojava.classes.Aluno"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="cursojava.interfaces.PermitirAcesso"/>
+    <fullyQualifiedTypeName name="cursojava.classes.Secretario"/>
 </qualifiedTypeNameHistroy>

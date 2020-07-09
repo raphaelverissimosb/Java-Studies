@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 
 import cursojava.classes.Aluno;
 import cursojava.classes.Disciplina;
+import cursojava.classes.Secretario;
 import cursojava.constantes.StatusAluno;
 
 public class PrimeiraClasseJava {
@@ -17,7 +18,11 @@ public class PrimeiraClasseJava {
 		String senha = JOptionPane.showInputDialog("Informe a senha:");
 		
 		
-		if(login.equalsIgnoreCase("adimn")&& senha.equalsIgnoreCase("admin")) {
+		Secretario secretario = new Secretario();
+		secretario.setUsuario(login);
+		secretario.setSenha(senha);
+		
+		if(secretario.autenticar()) {
 		List<Aluno> alunos = new ArrayList<>();
 		
 		// HashMap
@@ -198,7 +203,7 @@ public class PrimeiraClasseJava {
 //		}
 		
 		}else {
-			System.out.println("Desculpe, tente novamente mais tarde!!!");
+			System.out.println("Desculpe, usuario ou senha incorretos");
 		}	
 	}
 }

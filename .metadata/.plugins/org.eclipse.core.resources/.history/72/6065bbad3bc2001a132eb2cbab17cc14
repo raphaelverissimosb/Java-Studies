@@ -1,22 +1,38 @@
 package executavel;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.JOptionPane;
 
 import cursojava.classes.Aluno;
 import cursojava.classes.Disciplina;
+import cursojava.classes.Secretario;
 import cursojava.constantes.StatusAluno;
 
 public class PrimeiraClasseJava {
 	public static void main(String[] args) {
 		
+		String login = JOptionPane.showInputDialog("Informe o login:");
+		String senha = JOptionPane.showInputDialog("Informe a senha:");
+		
+		
+		Secretario secretario = new Secretario();
+		secretario.setUsuario(login);
+		secretario.setSenha(senha);
+		
+		if(secretario.autenticar()) {
 		List<Aluno> alunos = new ArrayList<>();
 		
-		List<Aluno> alunosAprovados = new ArrayList<>();
-		List<Aluno> alunosRecuperacao = new ArrayList<>();
-		List<Aluno> alunosReprovados = new ArrayList<>();
+		// HashMap
+		HashMap<String, List<Aluno>> maps = new HashMap<>();
+		
+		
+		
+//		List<Aluno> alunosAprovados = new ArrayList<>();
+//		List<Aluno> alunosRecuperacao = new ArrayList<>();
+//		List<Aluno> alunosReprovados = new ArrayList<>();
 		
 		
 		for(int qtd = 1 ; qtd <= 2; qtd++) {
@@ -80,15 +96,51 @@ public class PrimeiraClasseJava {
 		
 		alunos.add(aluno1);
 	}
-		for(Aluno aluno : alunos) {
+		
+	maps.put(StatusAluno.APROVADO, new ArrayList<Aluno>());
+	maps.put(StatusAluno.RECUPERACAO, new ArrayList<Aluno>());
+	maps.put(StatusAluno.REPROVADO, new ArrayList<Aluno>());
+	
+		
+	for(Aluno aluno : alunos) {
 			if (aluno.getAlunoAporvado2().equalsIgnoreCase(StatusAluno.APROVADO)) {
-				alunosAprovados.add(aluno);
+				maps.get(StatusAluno.APROVADO).add(aluno);
 			}else if(aluno.getAlunoAporvado2().equalsIgnoreCase(StatusAluno.RECUPERACAO)) {
-				alunosRecuperacao.add(aluno);
+				maps.get(StatusAluno.RECUPERACAO).add(aluno);
 			}else {
-				alunosReprovados.add(aluno);
+				maps.get(StatusAluno.REPROVADO).add(aluno);
 			}
-		}
+	}
+	
+	//Lista dos Aprovados 
+	System.out.println("********** Lista dos Aprovados **********");
+	for(Aluno aluno :maps.get(StatusAluno.APROVADO)) {
+		System.out.println("Aluno:" + aluno.getNome());
+		System.out.println("Media:" +aluno.getMediaNota());
+		System.out.println("Resultado:" + aluno.getAlunoAporvado2());
+		System.out.println();
+	}
+	
+	System.out.println("********** Lista dos Recuperacao **********");
+	for(Aluno aluno : maps.get(StatusAluno.RECUPERACAO)) {
+		System.out.println("Aluno:" + aluno.getNome());
+		System.out.println("Media:" +aluno.getMediaNota());
+		System.out.println("Resultado:" + aluno.getAlunoAporvado2());
+		System.out.println();
+	}
+	
+	System.out.println("********** Lista dos Reprovados **********");
+	for(Aluno aluno : maps.get(StatusAluno.REPROVADO)) {
+		System.out.println("Aluno:" + aluno.getNome());
+		System.out.println("Media:" +aluno.getMediaNota());
+		System.out.println("Resultado:" + aluno.getAlunoAporvado2());
+		System.out.println();
+	}
+	
+	
+	
+	
+	
 //	//Percorrer listas por posicoes
 //		for(int pos =0 ; pos < alunos.size(); pos ++ ) {
 //			
@@ -150,6 +202,8 @@ public class PrimeiraClasseJava {
 //			}
 //		}
 		
-			
+		}else {
+			System.out.println("Desculpe, tente novamente mais tarde!!!");
+		}	
 	}
 }
