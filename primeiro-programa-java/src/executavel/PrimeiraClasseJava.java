@@ -9,20 +9,22 @@ import javax.swing.JOptionPane;
 import cursojava.classes.Aluno;
 import cursojava.classes.Disciplina;
 import cursojava.classes.Secretario;
+import cursojava.classesAuxiliares.FuncaoAutenticar;
 import cursojava.constantes.StatusAluno;
+import cursojava.interfaces.PermitirAcesso;
 
 public class PrimeiraClasseJava {
 	public static void main(String[] args) {
 		
+		try {
 		String login = JOptionPane.showInputDialog("Informe o login:");
 		String senha = JOptionPane.showInputDialog("Informe a senha:");
 		
 		
-		Secretario secretario = new Secretario();
-		secretario.setUsuario(login);
-		secretario.setSenha(senha);
+		PermitirAcesso permitirAcesso = new Secretario(login , senha);
 		
-		if(secretario.autenticar()) {
+		
+		if(new FuncaoAutenticar(permitirAcesso).autenticar()) { // I will block the contract just to permitted people 
 		List<Aluno> alunos = new ArrayList<>();
 		
 		// HashMap
@@ -205,5 +207,14 @@ public class PrimeiraClasseJava {
 		}else {
 			System.out.println("Desculpe, usuario ou senha incorretos");
 		}	
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+			System.out.println("Mensagem:" + e.getMessage());
+			
+			JOptionPane.showMessageDialog(null, "Erro ao processar notas" + e.getMessage());
+		}
+		
 	}
 }

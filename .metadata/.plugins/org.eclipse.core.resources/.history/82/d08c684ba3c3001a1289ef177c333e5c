@@ -1,0 +1,11 @@
+package cursojava.classesAuxiliares;
+
+import cursojava.interfaces.PermitirAcesso;
+
+public class FuncaoAutenticar {
+	
+	public boolean autenticarCursoJava(PermitirAcesso acesso) {
+		return acesso.autenticar();
+	}
+	
+}

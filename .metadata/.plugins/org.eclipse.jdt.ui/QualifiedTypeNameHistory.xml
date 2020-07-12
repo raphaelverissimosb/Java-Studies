@@ -6,7 +6,6 @@
     <fullyQualifiedTypeName name="cursojava.classes.Disciplina"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="cursojava.constantes.StatusAluno"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="contabancaria.ContaBancaria"/>
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="Vendas.Venda"/>
@@ -15,6 +14,9 @@
     <fullyQualifiedTypeName name="cursojava.classes.Pessoa"/>
     <fullyQualifiedTypeName name="cursojava.classes.Aluno"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="cursojava.interfaces.PermitirAcesso"/>
     <fullyQualifiedTypeName name="cursojava.classes.Secretario"/>
+    <fullyQualifiedTypeName name="cursojava.classesAuxiliares.FuncaoAutenticar"/>
+    <fullyQualifiedTypeName name="cursojava.interfaces.PermitirAcesso"/>
+    <fullyQualifiedTypeName name="cursojava.classes.Diretor"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>
