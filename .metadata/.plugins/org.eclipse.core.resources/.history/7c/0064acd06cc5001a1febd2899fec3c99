@@ -5,7 +5,7 @@ import java.util.List;
 
 import cursojava.constantes.StatusAluno;
 
-public class Aluno {
+public class Aluno extends Pessoa {
 	
 
 	private String dataMatricula;
@@ -21,6 +21,10 @@ public class Aluno {
 	public Aluno() {
 		
 	}
+	public Aluno(String nome) {
+		super.nome = nome;
+	}
+	
 
 	//Getters and Setters
 	public List<Disciplina> getDisciplinas() {
@@ -82,16 +86,30 @@ public class Aluno {
 			return StatusAluno.REPROVADO;
 		}
 	}
-
+	
+	@Override
+	public double salario() {
+		return 1500.90;
+	}
+	
+	
+	@Override
+	public boolean pessoaMaiorIdade() {
+		return idade >= 21;
+	}
+	
 	// to String method 
 	
+	@Override
+	public String toString() {
+		return "Aluno [dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
+				+ serieMatriculado + ", disciplinas=" + disciplinas + "]";
+	}
+
 	
-	
-	
-	
-	
-	
-	
+	public String msgMaiorIdade() {
+		return this.pessoaMaiorIdade() ? "Oba pessoa e maior de idade!" : "Pessoa nao e maior de idade!";
+	}
 	
 	
 }

@@ -208,7 +208,7 @@ public class PrimeiraClasseJava {
 			System.out.println("Desculpe, usuario ou senha incorretos");
 		}	
 		
-		}catch(NumberFormatException e) {
+		}catch(Exception e) {
 			
 			StringBuilder saida = new StringBuilder();
 			
@@ -217,19 +217,16 @@ public class PrimeiraClasseJava {
 			System.out.println("Mensagem:" + e.getMessage());
 			
 			for(int i  = 0 ;i <= e.getStackTrace().length; i++) {
-				saida.append("\n" + e.getStackTrace()[i].getClassName());
-				saida.append("\n" + e.getStackTrace()[i].getLineNumber());
-				saida.append("\n" + e.getStackTrace()[i].getMethodName());
+				saida.append(e.getStackTrace()[i].getClassName());
+				saida.append(e.getStackTrace()[i].getLineNumber());
+				saida.append(e.getStackTrace()[i].getMethodName());
 			}
 			
 			
-			JOptionPane.showMessageDialog(null, "Erro de conversao de numero" + e.getMessage());
+			JOptionPane.showMessageDialog(null, "Erro ao processar notas" + e.getMessage());
 			
-		}catch(NullPointerException e) {
-			JOptionPane.showMessageDialog(null, "Opa um null pointer exception"  + e.getClass());
-		}catch(Exception e) {
-			e.printStackTrace();
-			JOptionPane.showMessageDialog(null, "Erro inesperado !" + e.getClass().getName());
+			
+			
 		}
 		
 	}

@@ -2,9 +2,12 @@ package cursojava.classes;
 
 public class Disciplina {
 
+	
 	private double nota;
 	private String disciplina;
 
+	
+	// Metodos Getters and Setters
 	public double getNota() {
 		return nota;
 	}
@@ -21,6 +24,9 @@ public class Disciplina {
 		this.disciplina = disciplina;
 	}
 
+	
+	// Metodos Equals and Hash Code
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

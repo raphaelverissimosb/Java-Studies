@@ -229,7 +229,7 @@ public class PrimeiraClasseJava {
 			JOptionPane.showMessageDialog(null, "Opa um null pointer exception"  + e.getClass());
 		}catch(Exception e) {
 			e.printStackTrace();
-			JOptionPane.showMessageDialog(null, "Erro inesperado !" + e.getClass().getName());
+			JOptionPane.showMessageDialog(null, "Erro inesperado");
 		}
 		
 	}

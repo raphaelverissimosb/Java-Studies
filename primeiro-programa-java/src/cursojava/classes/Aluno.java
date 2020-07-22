@@ -5,19 +5,22 @@ import java.util.List;
 
 import cursojava.constantes.StatusAluno;
 
-public class Aluno extends Pessoa {
+public class Aluno extends Pessoa { // classe Aluno extende Pessoa e todos os seus atributos
 	
-
+    // declaracao de atributos 
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
 	
 	
+	// Lista de diciplinas 
 	private List <Disciplina> disciplinas = new ArrayList<>();
 
 	
 	
 	//constructors
+	
+	//Metodo construtor padrao da classe
 	public Aluno() {
 		
 	}
@@ -26,14 +29,16 @@ public class Aluno extends Pessoa {
 	}
 	
 
-	//Getters and Setters
+	//Getters and Setters para instaciar valores dentro do array de disciplinas
 	public List<Disciplina> getDisciplinas() {
 		return disciplinas;
 	}
 	public void setDisciplinas(List<Disciplina> disciplinas) {
 		this.disciplinas = disciplinas;
 	}
-
+	
+	
+	//Getters and Setters dos atributos 
 	public String getDataMatricula() {
 		return dataMatricula;
 	}
@@ -56,9 +61,13 @@ public class Aluno extends Pessoa {
 	
 	
 	// Methods 
+	
+	// Metodo gerador de media de notas do aluno
 	public double getMediaNota() {
 		
 		double somaNotas = 0.0;
+		
+		// for para percorrer as disciplinas e apresentar as notas
 		for (Disciplina disciplina : disciplinas) {
 			somaNotas += disciplina.getNota();
 		}
@@ -78,7 +87,7 @@ public class Aluno extends Pessoa {
 		double media = getMediaNota();
 		if(media >= 5) {
 			if(media >= 7) {
-				return StatusAluno.APROVADO;
+				return StatusAluno.APROVADO; // retorna uma constante para ter um maior controle do que for retornado 
 			}else {
 				return StatusAluno.RECUPERACAO;
 			}
@@ -87,7 +96,7 @@ public class Aluno extends Pessoa {
 		}
 	}
 	
-	@Override
+	@Override // sobrescrita da classe Pai vinda de um metodo abstrato
 	public double salario() {
 		return 1500.90;
 	}

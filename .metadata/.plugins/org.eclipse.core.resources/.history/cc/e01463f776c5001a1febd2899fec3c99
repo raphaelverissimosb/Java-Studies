@@ -1,14 +1,16 @@
 package cursojava.classes;
 
-public class Pessoa {
+public abstract class Pessoa {
 	
 	protected String nome;
-	private int idade;
-	private String dataNascimento;
-	private String registroGeral;
-	private String numeroCpf;
-	private String nomeMae;
-	private String nomePai;
+	protected int idade;
+	protected String dataNascimento;
+	protected String registroGeral;
+	protected String numeroCpf;
+	protected String nomeMae;
+	protected String nomePai;
+	
+	
 	public String getNome() {
 		return nome;
 	}
@@ -52,6 +54,13 @@ public class Pessoa {
 		this.nomePai = nomePai;
 	}
 	
+	
+	
+	public boolean pessoaMaiorIdade() {
+		return idade >= 18;
+	}
+	
+	public abstract double salario();
 	
 	
 }

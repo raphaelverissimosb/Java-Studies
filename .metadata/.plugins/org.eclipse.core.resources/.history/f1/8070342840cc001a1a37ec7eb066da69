@@ -225,11 +225,8 @@ public class PrimeiraClasseJava {
 			
 			JOptionPane.showMessageDialog(null, "Erro de conversao de numero" + e.getMessage());
 			
-		}catch(NullPointerException e) {
-			JOptionPane.showMessageDialog(null, "Opa um null pointer exception"  + e.getClass());
-		}catch(Exception e) {
-			e.printStackTrace();
-			JOptionPane.showMessageDialog(null, "Erro inesperado !" + e.getClass().getName());
+			
+			
 		}
 		
 	}
