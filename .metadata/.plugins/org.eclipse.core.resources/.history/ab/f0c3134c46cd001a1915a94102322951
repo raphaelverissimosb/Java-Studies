@@ -230,8 +230,6 @@ public class PrimeiraClasseJava {
 		}catch(Exception e) {
 			e.printStackTrace();
 			JOptionPane.showMessageDialog(null, "Erro inesperado !" + e.getClass().getName());
-		}finally {
-			System.out.println("Obrigado por apreder Java!");
 		}
 		
 	}

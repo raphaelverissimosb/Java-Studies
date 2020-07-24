@@ -18,5 +18,8 @@
     <fullyQualifiedTypeName name="cursojava.classesAuxiliares.FuncaoAutenticar"/>
     <fullyQualifiedTypeName name="cursojava.interfaces.PermitirAcesso"/>
     <fullyQualifiedTypeName name="cursojava.classes.Diretor"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>
