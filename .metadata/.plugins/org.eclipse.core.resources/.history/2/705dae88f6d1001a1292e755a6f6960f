@@ -1,0 +1,27 @@
+package executavel;
+
+public class ArrayVetor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		/*Pode ser de todos os tipos de dados possiveis*/
+		
+		
+		/*Deve sempre possuir a quantidade de posicoes definidas*/
+		double notas[] = new double[4];
+		
+		notas[0] = 8.9;
+		notas[1] = 4;
+		notas[2] = 5.5;
+		notas[3] = 10;
+		
+		
+		System.out.println(notas[3]);
+		
+		
+	
+	}
+
+}
