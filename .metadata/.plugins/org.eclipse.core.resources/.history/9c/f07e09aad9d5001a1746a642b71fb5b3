@@ -22,7 +22,7 @@ public class ArrayVetor {
 		
 		Disciplina disciplina2 = new Disciplina();	
 		disciplina2.setDisciplina("Banco de Dados");
-		double notas2[] = {9.5,10,8.2,1};
+		double notas2[] = {9.5,10,8.2,4};
 		disciplina2.setNota(notas2);
 		
 		aluno1.getDisciplinas().add(disciplina2);

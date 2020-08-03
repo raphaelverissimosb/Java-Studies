@@ -1,6 +1,6 @@
 package cursojava.classes;
 
-public abstract class Pessoa { //classes abstratas nao podem ser chamadas diretamente 
+public abstract class Pessoa {
 	
 	//Classe Pai e seus atributos 
 	protected String nome; // colocamos os atributos como protected para que nao possam ser instanciados diretamente 
@@ -56,13 +56,12 @@ public abstract class Pessoa { //classes abstratas nao podem ser chamadas direta
 	}
 	
 	
-	// metodos da classe pai que sao opicionais de serem sobre-escritos ou nao
+
 	public boolean pessoaMaiorIdade() {
 		return idade >= 18;
 	}
 	
-	
-	// metodo de sobre-escrita obrigatorio a escrita interna pode ser realizada na implementacao das classes filhas  
+
 	public abstract double salario();
 	
 	

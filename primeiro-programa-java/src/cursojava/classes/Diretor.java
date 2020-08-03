@@ -32,7 +32,6 @@ public class Diretor  extends Pessoa implements PermitirAcesso{
 		this.titulacao = titulacao;
 	}
 	
-	//Constructor
 	
 	public Diretor() {
 		

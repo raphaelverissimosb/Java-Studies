@@ -22,7 +22,7 @@ public class ArrayVetor {
 		
 		Disciplina disciplina2 = new Disciplina();	
 		disciplina2.setDisciplina("Banco de Dados");
-		double notas2[] = {9.5,10,8.2,1};
+		double notas2[] = {9.5,10,8.2,4};
 		disciplina2.setNota(notas2);
 		
 		aluno1.getDisciplinas().add(disciplina2);
@@ -38,7 +38,6 @@ public class ArrayVetor {
 			System.out.println("Disciplina "+ discip.getDisciplina());
 			
 			double notaMax = 0.0;
-			double notaMin = 0.0;
 			
 			System.out.println("**************Notas da Disciplina**************");
 			for(int i = 0 ; i < discip.getNota().length; i++) {
@@ -50,21 +49,10 @@ public class ArrayVetor {
 						notaMax = discip.getNota()[i];
 					}
 				}
-				
-				if(i == 0) {
-					notaMin = discip.getNota()[i];
-				}else {
-					if(discip.getNota()[i] < notaMin) {
-						notaMin = discip.getNota()[i];
-					}
-				}
 			
 			}
 			
 			System.out.println("A maior nota da disciplina = " + discip.getDisciplina() + " e = " + notaMax);
-			System.out.println("A menor nota da disciplina = " + discip.getDisciplina() + " e = " + notaMin);
-			
-			
 		}
 		
 	
