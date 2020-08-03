@@ -1,33 +1,60 @@
 package executavel;
 
-import javax.swing.JOptionPane;
-
-
+import cursojava.classes.Aluno;
+import cursojava.classes.Disciplina;
 
 public class ArrayVetor {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Aluno aluno1 = new Aluno();
+		
+		aluno1.setNome("Raphael Verissimo");
+		aluno1.setNomeEscola("Java Dev");
+		
+		Disciplina disciplina = new Disciplina();
+		
+		disciplina.setDisciplina("Java");
+		double notas[] = {4,8.5,10,5};
+		disciplina.setNota(notas);
+		
+		aluno1.getDisciplinas().add(disciplina);
 		
 		
-		/*Pode ser de todos os tipos de dados possiveis*/
+		Disciplina disciplina2 = new Disciplina();	
+		disciplina2.setDisciplina("Banco de Dados");
+		double notas2[] = {9.5,10,8.2,4};
+		disciplina2.setNota(notas2);
 		
+		aluno1.getDisciplinas().add(disciplina2);
 		
-		/*Deve sempre possuir a quantidade de posicoes definidas*/
-		double notas[] = new double[4];
+		System.out.println("Nopme do aluno = " + aluno1.getNome() + " inscrito na escola = " + aluno1.getNomeEscola());
 		
-		String  pos  = JOptionPane.showInputDialog("Informe o tamanho para o seu Array :");
-		int i = Integer.parseInt(pos);
+		System.out.println();
+		System.out.println("**************Disciplinas do Aluno**************");
 		
-		for(  ; i < notas.length;  i++) {
+		for(Disciplina discip : aluno1.getDisciplinas()) {
+			System.out.println();
+			System.out.println();
+			System.out.println("Disciplina "+ discip.getDisciplina());
 			
-		  String pos2 =JOptionPane.showInputDialog("Informe o valor de nota na posicao" + (i +1));
-		  notas[i] = Double.parseDouble(pos2);
+			double notaMax = 0.0;
+			
+			System.out.println("**************Notas da Disciplina**************");
+			for(int i = 0 ; i < discip.getNota().length; i++) {
+				System.out.println("Nota " +( i + 1)+ " = " + discip.getNota()[i]);
+				if(i == 0) {
+					notaMax  = discip.getNota()[i]; 
+				}else {
+					if(discip.getNota()[i] > notaMax) {
+						notaMax = discip.getNota()[i];
+					}
+				}
+			
+			}
+			
+			System.out.println("A maior nota da disciplina = " + discip.getDisciplina() + " e = " + notaMax);
 		}
 		
-		for(int j = 0 ; j < notas.length; j++) {
-			System.out.println("Nota" + "("+ i +")"+ " = " + notas[j]);
-		}
 	
 	}
 

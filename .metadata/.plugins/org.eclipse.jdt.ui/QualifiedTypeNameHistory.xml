@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="jdk.nashorn.internal.scripts.JO"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
-    <fullyQualifiedTypeName name="cursojava.classes.Disciplina"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="cursojava.constantes.StatusAluno"/>
     <fullyQualifiedTypeName name="contabancaria.ContaBancaria"/>
@@ -12,7 +10,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="cursojava.classes.Pessoa"/>
-    <fullyQualifiedTypeName name="cursojava.classes.Aluno"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="cursojava.classes.Secretario"/>
     <fullyQualifiedTypeName name="cursojava.classesAuxiliares.FuncaoAutenticar"/>
@@ -21,5 +18,9 @@
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.compiler.Parser"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="cursojava.classes.Aluno"/>
+    <fullyQualifiedTypeName name="cursojava.classes.Disciplina"/>
 </qualifiedTypeNameHistroy>

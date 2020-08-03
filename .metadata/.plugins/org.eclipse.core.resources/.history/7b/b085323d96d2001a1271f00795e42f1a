@@ -1,0 +1,23 @@
+package executavel;
+
+import cursojava.classes.Aluno;
+import cursojava.classes.Disciplina;
+
+public class ArrayVetor {
+
+	public static void main(String[] args) {
+		Aluno aluno1 = new Aluno();
+		
+		aluno1.setNome("Raphael Verissimo");
+		aluno1.setNomeEscola("Java Dev");
+		
+		Disciplina discipina = new Disciplina();
+		
+		discipina.setDisciplina("Java");
+		
+		double notas[] = {4,8,10,5};
+		
+		discipina.setNota(notas);
+	}
+
+}

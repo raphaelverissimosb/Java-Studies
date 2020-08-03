@@ -69,7 +69,7 @@ public class Aluno extends Pessoa { // classe Aluno extende Pessoa e todos os se
 		
 		// for para percorrer as disciplinas e apresentar as notas
 		for (Disciplina disciplina : disciplinas) {
-			somaNotas += disciplina.getNota();
+			somaNotas += disciplina.getMediaNotas();
 		}
 		return somaNotas / disciplinas.size();
 	}
