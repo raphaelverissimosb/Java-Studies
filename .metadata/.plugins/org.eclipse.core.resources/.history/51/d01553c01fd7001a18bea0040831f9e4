@@ -1,0 +1,16 @@
+package executavel;
+
+public class SplitArray {
+
+	
+	public static void main(String[] args) {
+		
+		String text = "alex, curso java, 80, 90, 89 ";
+		String[] valoresArrayTexto = text.split(",");
+		
+		for(int i = 0 ; i < valoresArrayTexto.length; i++) {
+			System.out.println("Value position" + i + " = " + valoresArrayTexto[i]);
+		}
+	}
+	
+}
