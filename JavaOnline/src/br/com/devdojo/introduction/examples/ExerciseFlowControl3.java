@@ -1,3 +1,4 @@
+package br.com.devdojo.introduction.examples;
 
 public class ExerciseFlowControl3 {
 	public static void main (String[] args) {

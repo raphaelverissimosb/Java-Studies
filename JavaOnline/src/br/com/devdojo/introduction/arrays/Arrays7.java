@@ -1,5 +1,6 @@
+package br.com.devdojo.introduction.arrays;
 
-public class Arrays1 {
+public class Arrays7 {
 
 	public static void main(String[] args) {
 		// Array 1

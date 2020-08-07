@@ -1,3 +1,4 @@
+package br.com.devdojo.introduction.arrays;
 
 public class Arrays5 {
 
