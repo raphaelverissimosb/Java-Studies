@@ -19,8 +19,6 @@ public class TeacherTest {
 		System.out.println(teacher.rg);
 		System.out.println(teacher.cpf);
 		
-		
-
 	}
 
 }
