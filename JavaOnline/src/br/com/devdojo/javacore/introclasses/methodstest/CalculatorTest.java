@@ -11,14 +11,23 @@ public class CalculatorTest {
 		
 		calc.sumTwoNumbers();
 		calc.subTwoNumbers();
+		System.out.println();
+		
 		
 		// With parameters
 		calc.multTwoNumbers(5, 5);
+		System.out.println();
+		
 		// with return 
 		System.out.println(calc.divTwoNumbers(20, 2));
+		System.out.println();
 		
 		double divNumberEx = calc.divTwoNumbers(50, 5);
 		System.out.println(divNumberEx);
+		System.out.println();
+		
+		calc.printTwoNumbersDiv(20, 5);
+		
 	}
 
 }

@@ -25,4 +25,9 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.Student"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.Car"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.Teacher"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.methods.Calculator"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.methods.Teacher"/>
 </qualifiedTypeNameHistroy>
