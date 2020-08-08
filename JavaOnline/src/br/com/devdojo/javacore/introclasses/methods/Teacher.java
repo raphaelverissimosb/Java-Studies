@@ -7,12 +7,16 @@ public class Teacher {
 	public String rg;
 	public String cpf;
   
-	public void printData(Teacher teacher) {
-		System.out.println(teacher.name);
-		System.out.println(teacher.cpf);
-		System.out.println(teacher.register);
-		System.out.println(teacher.rg);
+	public void printData() {
+		System.out.println(this.name);
+		System.out.println(this.cpf);
+		System.out.println(this.register);
+		System.out.println(this.rg);
+		this.name = "Valks";
+		System.out.println(this.name);
 	}
+	
+	
 	
   
 }

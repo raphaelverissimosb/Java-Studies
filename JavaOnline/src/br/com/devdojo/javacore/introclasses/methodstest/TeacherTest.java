@@ -13,9 +13,15 @@ public class TeacherTest {
 		teacher.register = "12345656";
 		teacher.rg = "15242366-8";
 		
-		teacher.printData(teacher);
+		teacher.printData();
+		
+		
+		teacher.printData();
+		System.out.println(teacher.name);
 		
 	}
+	
+	
  
 	
 }

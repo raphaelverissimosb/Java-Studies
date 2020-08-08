@@ -28,6 +28,12 @@ public class CalculatorTest {
 		
 		calc.printTwoNumbersDiv(20, 5);
 		
+		System.out.println();
+		int[] numbers = new int []{1,2,3,4,6};
+		calc.sumArray(numbers);
+		
+		System.out.println();
+		calc.sumVarArgs(1,2,3,4,6,1);
 	}
 
 }
