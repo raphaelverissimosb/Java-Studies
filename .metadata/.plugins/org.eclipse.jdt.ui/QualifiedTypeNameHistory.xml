@@ -30,4 +30,5 @@
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.Teacher"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.methods.Calculator"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.methods.Teacher"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.methodsoverload.classes.Employer"/>
 </qualifiedTypeNameHistroy>

@@ -34,10 +34,8 @@ public class Student {
 		return grade;
 	}
 	
-	public void setApproved(boolean approved) {
-		this.approved = approved;
-	}
-	public boolean getApproved() {
+
+	public boolean isApproved() {
 		return this.approved;
 	}
 	
