@@ -7,6 +7,20 @@ public class Employer {
 	private double salary;
 	private String rg;
 	
+	
+	//Constructors
+	public Employer() {
+		
+	}
+	public Employer(String name, String cpf, String rg, double salary) {
+		
+		this.name = name;
+		this.cpf = cpf;
+		this.rg = rg;
+		this.salary = salary;
+	}
+	
+	
 	//getters and setters
 	
 	public String getName() {
