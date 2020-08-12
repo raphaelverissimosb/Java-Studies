@@ -13,13 +13,15 @@ public class Employer {
 		
 	}
 	public Employer(String name, String cpf, String rg, double salary) {
-		
 		this.name = name;
 		this.cpf = cpf;
 		this.rg = rg;
 		this.salary = salary;
 	}
 	
+	public Employer(String name, String cpf, double salary ) {
+		init(name,cpf, salary);
+	}
 	
 	//getters and setters
 	
