@@ -4,7 +4,7 @@ public class Car {
 	//max speed 2240 km/h
 	private String name;
 	private double maxVel;
-	public static double limVel = 240;
+	private static double limVel = 240;
 	
 	//Constructors
 	public Car(double maxVel, double limVel) {
@@ -18,6 +18,13 @@ public class Car {
 	}
 	public Car() {
 		
+	}
+	
+	public static void setlimVel(double limVel) {
+		Car.limVel = limVel;
+	}
+	public static double getlimVel() {
+		return Car.limVel;
 	}
 	
 	

@@ -31,4 +31,7 @@
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.methods.Calculator"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.methods.Teacher"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.methodsoverload.classes.Employer"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.overloadconstructors.classes.Student"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.initializationblock.classes.Costumer"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.modaccess.classes.Car"/>
 </qualifiedTypeNameHistroy>
