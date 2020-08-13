@@ -14,4 +14,16 @@ public class Employer extends Person {
 	
 	
 	
+	
+	//methods
+	public void print() {
+		super.print();
+		System.out.println("Salary :"+this.salary);
+		printReceiptPayment();
+	}
+	
+	public void printReceiptPayment() {
+		System.out.println("Me"+super.name+"received payment as value of:"+this.salary);
+	}
+	
 }

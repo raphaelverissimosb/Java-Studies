@@ -19,6 +19,8 @@ public class InheritageTest {
 		
 		person.print();
 		
+		System.out.println("***********************************");
+		
 		Employer employer = new Employer();
 		employer.setSalary(3000);
 		employer.setName("Marcos");

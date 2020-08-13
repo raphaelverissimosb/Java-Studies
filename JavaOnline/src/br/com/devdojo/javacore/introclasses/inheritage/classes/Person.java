@@ -1,9 +1,9 @@
 package br.com.devdojo.javacore.introclasses.inheritage.classes;
 
 public class Person {
-	private String name;
-	private String cpf;
-	private Address adress;
+	protected String name;
+	protected String cpf;
+	protected Address adress;
 	
 	public String getName() {
 		return name;
