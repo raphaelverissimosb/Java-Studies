@@ -34,4 +34,10 @@
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.overloadconstructors.classes.Student"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.initializationblock.classes.Costumer"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.modaccess.classes.Car"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.association.classes.Department"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.compiler.sym"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.introduction.examples.lecture.Student"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.introduction.examples.lecture.Lecture"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.introduction.examples.lecture.Teacher"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.introduction.examples.lecture.Place"/>
 </qualifiedTypeNameHistroy>

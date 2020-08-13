@@ -63,19 +63,32 @@ public class Lecture {
 		System.out.println("***Lecture***");
 		System.out.println("Title: "+this.title);
 	
-		
+		if(this.place != null) {
 		System.out.println("***Place***");
 		System.out.println("Rua :" + this.place.getStreet()+"Neighbor :"+ this.place.getNeighbor());
+		}else {
+			System.out.println("There is not a place to the lecure");
+		}
 		
+		if(teacher != null) {
 		System.out.println("***Teacher Information***");
 		System.out.println("Teacher :"+this.teacher.getName());
 		System.out.println("Teache :"+ this.teacher.getGraduated());
-		
-		System.out.println();
-		for(Student stud : student) {
-			System.out.println(stud.getName());
+		}else {
+			System.out.println("There is no teacher to this lecture");
 		}
 		
+		System.out.println();
+		
+		System.out.println("***Students Information***");
+		if(student != null && student.length != 0) {
+			for(Student stud : student) {
+				System.out.println(stud.getName());
+			}
+			return;
+		}else {
+			System.out.println("There are not students");
+		}
 	}
 	
 }

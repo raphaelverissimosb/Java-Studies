@@ -52,10 +52,18 @@ public class Teacher {
 	public void print() {
 		System.out.println("Name :"+this.name);
 		System.out.println("Graduated :"+this.graduated);
-		for(Lecture lec : lecture) {
+		if(lecture != null && lecture.length != 0 ) {
+		
+			for(Lecture lec : lecture) {
 			System.out.println("Lecture name :" +lec.getTitle());
+			}
+			return;
 		}
+		System.out.println("There is not lecture");
+		
 	}
+		
+	
 	
 	
 }

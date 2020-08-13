@@ -57,9 +57,10 @@ public class Student {
 		System.out.println("Age: "+this.age);
 		if(this.lecture != null) {
 		System.out.println("title: " +this.lecture.getTitle());
-		}else {
-			System.out.println("The student do not have the ticket to this lecture!");
+		return;
 		}
+			System.out.println("The student do not have the ticket to this lecture!");
+		
 	} 
 	
 	
