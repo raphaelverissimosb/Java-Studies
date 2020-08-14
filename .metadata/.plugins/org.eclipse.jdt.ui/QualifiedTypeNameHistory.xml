@@ -40,4 +40,7 @@
     <fullyQualifiedTypeName name="br.com.devdojo.introduction.examples.lecture.Lecture"/>
     <fullyQualifiedTypeName name="br.com.devdojo.introduction.examples.lecture.Teacher"/>
     <fullyQualifiedTypeName name="br.com.devdojo.introduction.examples.lecture.Place"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.inheritage.classes.Person"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.inheritage.classes.Address"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.inheritage.classes.Employer"/>
 </qualifiedTypeNameHistroy>

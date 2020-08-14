@@ -20,6 +20,7 @@ public class Address {
 	public void print() {
 		System.out.println("Street :" + this.street);
 		System.out.println("Neighbor :"+ this.neighbor);
+		
 	}
 	
 	

@@ -4,6 +4,17 @@ public class Employer extends Person {
 	
 	private double salary;
 
+	
+	//constructors
+	public Employer() {
+		
+	}
+	public Employer(String name) {
+		super(name);
+	}
+	
+	// getters and setters
+	
 	public double getSalary() {
 		return salary;
 	}
@@ -11,9 +22,6 @@ public class Employer extends Person {
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
-	
-	
-	
 	
 	//methods
 	public void print() {

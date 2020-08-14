@@ -5,6 +5,23 @@ public class Person {
 	protected String cpf;
 	protected Address adress;
 	
+	
+	public Person() {
+		
+	}
+	
+	public Person (String name) {
+		this.name = name;
+	}
+	
+	public Person(String name , String cpf) {
+		this(name);
+		this.cpf = cpf;
+	}
+	
+	
+	//getters and setters
+	
 	public String getName() {
 		return name;
 	}
