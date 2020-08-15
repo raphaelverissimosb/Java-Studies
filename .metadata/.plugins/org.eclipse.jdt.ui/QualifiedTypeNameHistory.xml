@@ -43,4 +43,7 @@
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.inheritage.classes.Person"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.inheritage.classes.Address"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.inheritage.classes.Employer"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.overridemethod.classes.Person"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.finalmod.classes.Car"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.finalmod.classes.Account"/>
 </qualifiedTypeNameHistroy>
