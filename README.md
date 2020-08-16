@@ -1,19 +1,19 @@
 # Java Code Bootcamps
 ***
-The material contained in this repository was developed for the purpose of studying and practicing Java programming language commands, through the realization of specific courses with renowned professionals in the labor market in Brazil and abroad.
-
-**Alex Egidio**- JDev Treinamentos
+The material contained in this repository was developed for the *purpose* of *studying* and *practicing* Java programming language commands, through the realization of specific courses with renowned professionals in the labor market in Brazil and abroad.
+***
+**Alex Egidio**- JDev 
 **Shokal Shah**- Advanced JAva Programming Course
 **Tim Bulchalka**- Java Programming MAster Class 
 **William Suane** - DevDojo
 
 
-*1 All the essential Java keywords, operators, statements, and expressions needed to fully understand exactly what you’re coding and why - making programming easy to grasp and less frustrating
+1. All the essential Java keywords, operators, statements, and expressions needed to fully understand exactly what you’re coding and why - making programming easy to grasp and less frustrating
 
-*2 You will learn the answers to questions like What is a Java class, What is polymorphism and inheritance, and to apply them to your java apps.
+1. Learn the answers to questions like What is a Java class, What is polymorphism and inheritance, and to apply them to your java apps.
 
-*3 How to safely download and install all necessary coding tools with less time and no frustrating installations or setups
+1. How to safely download and install all necessary coding tools with less time and no frustrating installations or setups
 
-*4 Complete chapters on object-oriented programming and many aspects of the Java API (the protocols and tools for building applications) so you can code for all platforms and derestrict your program’s user base (and potential sales)
+1. Complete chapters on object-oriented programming and many aspects of the Java API (the protocols and tools for building applications) so you can code for all platforms and derestrict your program’s user base (and potential sales)
 
-*5 How to develop powerful Java applications using one of the most powerful Integrated Development Environments on the market, IntelliJ IDEA! - Meaning you can code functional programs easier.  IntelliJ has both a FREE and PAID version, and you can use either in this course.
+1. How to develop powerful Java applications using one of the most powerful Integrated Development Environments on the market, IntelliJ IDEA! - Meaning you can code functional programs easier.  IntelliJ has both a FREE and PAID version, and you can use either in this course.
