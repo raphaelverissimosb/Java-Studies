@@ -6,7 +6,18 @@ public class Costumer {
 	
 	private String name;
 	private CostumerType typeOf;
+	private PaymentType paymentType;
 	
+	
+//	public enum CostumerType {
+//		JPERSON, FPERSON;
+//	}
+
+	//Constructor
+	// creating an enum inside my class 
+	public enum PaymentType{
+		CASH_PAYMENT, DEFFERED_PAYMENT;
+	}
 	
 	public Costumer(String name, CostumerType typeOf) {
 		super();
@@ -14,8 +25,15 @@ public class Costumer {
 		this.typeOf = typeOf;
 	}
 	
+	public Costumer(String name, CostumerType typeOf,PaymentType paymentType) {
+		this.name = name;
+		this.typeOf = typeOf;
+		this.paymentType = paymentType;
+		
+		
+	}
 	
-	
+	// Getters and Setters
 	public String getName() {
 		return name;
 	}
@@ -33,7 +51,7 @@ public class Costumer {
 
 	@Override
 	public String toString() {
-		return "Costumer [name=" + name + ", typeOf=" + typeOf + "]";
+		return "Costumer [name=" + name + ", typeOf=" + typeOf.getName() + "number=" + typeOf.getTypeOf() + "]";
 	}
 	
 	

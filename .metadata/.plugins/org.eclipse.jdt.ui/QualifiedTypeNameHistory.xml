@@ -46,4 +46,7 @@
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.overridemethod.classes.Person"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.finalmod.classes.Car"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.finalmod.classes.Account"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.enumer.classes.Costumer"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.enumer.test.CostumerType"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.enumer.classes.Costumer.PaymentType"/>
 </qualifiedTypeNameHistroy>
