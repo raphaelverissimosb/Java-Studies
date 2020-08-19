@@ -49,4 +49,7 @@
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.enumer.classes.Costumer"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.enumer.test.CostumerType"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.enumer.classes.Costumer.PaymentType"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.abstractclasses.classes.Employer"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.abstractclasses.classes.Manager"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.abstractclasses.classes.Saylor"/>
 </qualifiedTypeNameHistroy>
