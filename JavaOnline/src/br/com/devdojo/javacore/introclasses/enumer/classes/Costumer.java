@@ -14,9 +14,14 @@ public class Costumer {
 //	}
 
 	//Constructor
-	// creating an enum inside my class 
+	// creating an enumeration inside my class 
 	public enum PaymentType{
 		CASH_PAYMENT, DEFFERED_PAYMENT;
+		
+		
+		public String getId() {
+			return "Active";
+		}
 	}
 	
 	public Costumer(String name, CostumerType typeOf) {
