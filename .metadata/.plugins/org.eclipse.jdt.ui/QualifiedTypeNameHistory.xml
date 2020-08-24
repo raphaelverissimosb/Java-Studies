@@ -52,4 +52,9 @@
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.abstractclasses.classes.Employer"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.abstractclasses.classes.Manager"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.abstractclasses.classes.Saylor"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.interfaces.classes.Tributavel"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.interfaces.classes.Product"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.interfaces.classes.Transportable"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.interfaces.classes.Taxable"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.polimorfism.classes.Employer"/>
 </qualifiedTypeNameHistroy>
