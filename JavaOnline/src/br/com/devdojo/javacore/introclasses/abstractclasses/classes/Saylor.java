@@ -20,6 +20,8 @@ public class Saylor extends Employer{
 		super(name,clt,salary);
 		this.totalSales = totalSales;
 	}
+	
+	
 
 	//Getters and Setters
 	public double getTotalSales() {

@@ -6,6 +6,7 @@ public class Saylor extends Employer {
 	
 	public Saylor() {
 		
+	//Constructors	
 	}
 	public Saylor(String name, double salary) {
 		super(name, salary);
@@ -24,6 +25,7 @@ public class Saylor extends Employer {
 	public void setTotalSales(double totalSales) {
 		this.totalSales = totalSales;
 	}
+	
 	
 	@Override
 	public void paymentCalc() {

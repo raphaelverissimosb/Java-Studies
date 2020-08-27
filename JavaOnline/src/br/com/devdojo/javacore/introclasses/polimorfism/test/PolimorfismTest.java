@@ -15,9 +15,12 @@ public class PolimorfismTest {
 		
 		PaymentReport paymentReport = new PaymentReport();
 		
-		paymentReport.managerReportPayment(manager);
-		paymentReport.saylorReportPayment(saylor);
+//		paymentReport.managerReportPayment(manager);
+//		paymentReport.saylorReportPayment(saylor);
 		
+		paymentReport.genericPayment(manager); // cast widening 
+		System.out.println("=====================");
+		paymentReport.genericPayment(saylor); // cast widening 
 		
 	}
 

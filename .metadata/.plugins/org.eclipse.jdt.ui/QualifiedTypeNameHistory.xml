@@ -57,4 +57,7 @@
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.interfaces.classes.Transportable"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.interfaces.classes.Taxable"/>
     <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.polimorfism.classes.Employer"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.polimorfism.classes.Manager"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.polimorfism.classes.Saylor"/>
+    <fullyQualifiedTypeName name="br.com.devdojo.javacore.introclasses.polimorfism.classes.PaymentReport"/>
 </qualifiedTypeNameHistroy>

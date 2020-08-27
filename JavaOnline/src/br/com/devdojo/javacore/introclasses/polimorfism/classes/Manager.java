@@ -4,6 +4,8 @@ public class Manager extends Employer {
 	
 	private double profitSharing;
 	
+	
+	//Constructors
 	public Manager(String name, double salary) {
 		super(name, salary);
 	}

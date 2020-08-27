@@ -1,8 +1,8 @@
 package br.com.devdojo.javacore.introclasses.abstractclasses.classes;
 
 public abstract class Person {
-	
-	protected String name;
+	// this is an abstract class
+	protected String name; // every abstract element must be protected
 
 	//Getters and Setters
 	public String getName() {

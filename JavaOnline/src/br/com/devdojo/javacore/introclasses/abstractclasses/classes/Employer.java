@@ -1,7 +1,7 @@
 package br.com.devdojo.javacore.introclasses.abstractclasses.classes;
 
-public abstract class Employer extends Person {
-	
+public abstract class Employer extends Person { 
+	// employer is an abstract class because this class implements abstract methods
 	
 	protected String clt;
 	protected double salary;

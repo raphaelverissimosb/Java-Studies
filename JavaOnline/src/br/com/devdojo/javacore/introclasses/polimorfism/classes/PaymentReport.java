@@ -23,4 +23,12 @@ public class PaymentReport {
 		System.out.println("Salary " + saylor.getSalary());
 	}
 	
+	public void genericPayment(Employer employer) {
+		System.out.println();
+		System.out.println("Processing payment report");
+		employer.paymentCalc();
+		System.out.println();
+		System.out.println("Name " + employer.getName());
+		System.out.println("Salary " + employer.getSalary());
+	}
 }
