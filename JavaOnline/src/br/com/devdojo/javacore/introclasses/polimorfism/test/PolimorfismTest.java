@@ -19,9 +19,9 @@ public class PolimorfismTest {
 //		paymentReport.saylorReportPayment(saylor);
 		
 		paymentReport.genericPayment(manager); // cast widening 
-		System.out.println("=====================");
-		paymentReport.genericPayment(saylor); // cast widening 
-		
+//		System.out.println("=====================");
+//		paymentReport.genericPayment(saylor); // cast widening 
+//		
 	}
 
 }
