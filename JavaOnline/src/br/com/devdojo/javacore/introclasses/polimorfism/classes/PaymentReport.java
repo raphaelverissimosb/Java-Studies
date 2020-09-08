@@ -37,8 +37,7 @@ public class PaymentReport {
 		}
 		
 		if(employer instanceof Saylor) {
-			Saylor saylor = (Saylor) employer;
-			System.out.println("Total Sales :" + saylor.getTotalSales());
+			System.out.println("Total Sales :" + ((Saylor)employer).getTotalSales());
 		}
 	}
 }
