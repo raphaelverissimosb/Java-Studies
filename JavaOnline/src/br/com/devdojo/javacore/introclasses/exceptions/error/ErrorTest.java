@@ -1,4 +1,4 @@
-package br.com.devdojo.javacore.introclasses.exceptions.test;
+package br.com.devdojo.javacore.introclasses.exceptions.error;
 
 public class ErrorTest {
 
@@ -8,7 +8,7 @@ public class ErrorTest {
 	}
 	
 	public static void stackOverFlowError() {
-		
+		stackOverFlowError();
 	}
 
 }
