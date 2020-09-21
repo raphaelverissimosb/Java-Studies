@@ -2,5 +2,7 @@ package br.com.devdojo.javacore.introclasses.exceptions.checkedexceptions.classe
 
 public class Employer extends Person {
 	
-	
+	public void save() {
+		
+	};
 }
