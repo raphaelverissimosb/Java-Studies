@@ -6,35 +6,65 @@ public class ThreadEx {
 
 	public static void main(String[] args) throws InterruptedException {
 		
+	
+		Thread threadEmail = new Thread(thread1); 
+		threadEmail.start();
 		
-		new Thread () {
-			public void run() {
-				
-				// codigo da rotina que quero executar em paralelo 
-				for(int pos = 0 ; pos < 10; pos++) {
-					
-					
-					try {
-						Thread.sleep(1000);
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					
-					/*Da um tempo para a execucao do codigo*/
-					/*Quero executar esse envio com um tempo de parada ou um tempo deterinado*/
-					
-					System.out.println("Executando alguma rotina");
-				
-				}
-			}
-		}.start(); // liga a thread que processa por tras
 		
+		Thread ThreadNfe = new Thread(thread2);
+		ThreadNfe.start();
 
-		
-		//codigo do sistema que continua executando
 		System.out.println("Chegou ao fim");
-		//Fluxo do sistema 
 		JOptionPane.showInternalMessageDialog(null, "Sistema continua executando!");
 	}
+	
+	
+	//*************************************THREADS*************************************************
+	
+	private static Runnable thread1 = new Runnable() {
+		
+		@Override
+		public void run() {
+ 
+			for(int pos = 0 ; pos < 10; pos++) {
+				
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				
+				System.out.println("Executando alguma rotina");
+			
+			}
+			
+		}
+	};
+	
+	
+	private static Runnable thread2 = new Runnable() {
+		
+		@Override
+		public void run() {
+			
+			for(int i  = 0; i < 10; i++) {
+				try {
+					Thread.sleep(4000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				System.out.println("Envio de nfe!!!");
+			}
+			
+		}
+	};
+	
+	
+	
+	
+	
+	
+	
 }
